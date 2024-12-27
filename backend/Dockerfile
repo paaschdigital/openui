@@ -11,7 +11,7 @@ RUN mkdir -p openui/util && \
     /venv/bin/pip install --disable-pip-version-check .
 
 # Copy the virtualenv into a distroless image
-FROM python:3.12-slim-bookworm
+FROM python:3.14.0a3-slim-bookworm
 
 ENV PATH="/venv/bin:$PATH"
 
